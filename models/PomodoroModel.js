@@ -36,7 +36,7 @@ const pomodoroSchema = new mongoose.Schema(
             maxlength: 50
         }],
         productivity:{
-            type: Number, // Scale from 1 to 10
+            type: Number, // Scale from 1 to 5
             min: 1,
             max: 5
         },
