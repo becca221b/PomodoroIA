@@ -58,8 +58,13 @@ async function createTables() {
             END;
         `)
 
-        //Tabla se sesiones pomodoro
-        await connection.execute()
+        //Tabla de sesiones pomodoro
+        await connection.execute(`
+            BEGIN
+                EXECUTE INMEDIATE 'CREATE TABLE pomodoroSessions(
+
+                )'    
+        `)
     }catch(error){
 
     }
